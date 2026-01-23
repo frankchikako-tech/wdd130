@@ -38,6 +38,7 @@ aside {
     width: 20rem;
     text-align: center;
     border: 1xp solid rgb(0 0 0/.2);
+    /* 1 */
     padding: 1rem;
     background-color: #eee;
     color: #333;
