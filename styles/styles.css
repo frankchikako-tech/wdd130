@@ -49,11 +49,11 @@ aside img {
     height: auto;
 }
 
-aside h2 {
+/*aside h2 {
     position: absolute;
     top: 47px;
     left: 150px;
-}
+}*/
 
 p {
     padding: 0;
@@ -65,7 +65,7 @@ footer {
     border-top: 1px solid #000;
 }
 
-/*Class Selectors*/
+/*Class Selectors
 .box {
     margin: 1rem;
     border: 1px solid rgb(0 0 0/10%);
