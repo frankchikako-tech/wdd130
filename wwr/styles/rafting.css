@@ -41,7 +41,7 @@ h2 {
     font-family: var(--heading-font);
     color: var(--primary-color);
     text-align: center;
-    background-color: #264653;
+    background-color: beige;
 }
 
 nav,
@@ -78,10 +78,21 @@ h1 {
 
 .hero article img {
     float: right;
-    width: 125px;
+    width: 100px;
 }
 
 .hero article {
     position: absolute;
 
+}
+
+footer {
+    text-align: left;
+
+    color: var(--secondary-color);
+
+}
+
+footer img {
+    width: 30px;
 }
