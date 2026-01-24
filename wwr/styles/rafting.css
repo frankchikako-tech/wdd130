@@ -31,7 +31,7 @@ body {
 header,
 main,
 footer {
-    width: 840 0;
+    width: 840;
     margin: 0 auto;
     color: var(--secondary-color);
 }
