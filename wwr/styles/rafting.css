@@ -40,13 +40,15 @@ h1,
 h2 {
     font-family: var(--heading-font);
     color: var(--primary-color);
+    text-align: center;
+    background-color: #264653;
 }
 
 nav,
 p,
 section,
 article {
-    margin: 16px;
+    margin: 1px;
     padding: 8px;
 }
 
