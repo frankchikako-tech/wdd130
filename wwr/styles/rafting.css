@@ -106,3 +106,14 @@ footer {
 footer img {
     width: 30px;
 }
+
+.hero h1 {
+    background-color: var(--accent1-color);
+    color: #ffffff;
+    opacity: 0.9;
+}
+
+body {
+    font-family: var(--body-font);
+    color: var(--primary-color);
+}
