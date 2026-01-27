@@ -1,15 +1,24 @@
-:root {
-    --primary-color: #055a05;
-    /*forest green*/
-    --secondary-color: #f4a261;
-    /*warm sand*/
-    --accent1-color: #264653;
-    /*dark slate blue*/
-    --accent2-color: #e9c46a;
-    /*light golden yellow*/
-    --heading-font: "Time New Roman", "Georgia", serif;
-    --body-font: Arial, Helvetica, sans-serif;
+/*:root {
+  --primary-color: #033f2b;    /* darker green */
+/*--secondary-color: #f4a261; /* keep for accents only 
+  --accent1-color: #264653;   /* dark blue-green 
+  --accent2-color: #ffffff;   /* white text 
 
+  --heading-font: "Times New Roman", Georgia, serif;
+  --body-font: Arial, Helvetica, sans-serif;
+}*/
+:root {
+    --primary-color: #033f2b;
+    /* darker green */
+    --secondary-color: #f4a261;
+    /* keep for accents only */
+    --accent1-color: #264653;
+    /* dark blue-green */
+    --accent2-color: #ffffff;
+    /* white text */
+
+    --heading-font: "Times New Roman", Georgia, serif;
+    --body-font: Arial, Helvetica, sans-serif;
 }
 
 header {
