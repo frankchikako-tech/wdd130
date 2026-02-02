@@ -22,7 +22,7 @@
 }
 
 header {
-    background-color: var(--primary-color);
+    background-color: var(--accent2-color);
     color: var(--accent2-color);
 }
 
@@ -34,7 +34,7 @@ header {
 
 body {
     font-family: var(--body-font);
-    color: var(--accent1-color);
+    color: var(--primary-color);
 }
 
 header,
@@ -42,7 +42,7 @@ main,
 footer {
     width: 840px;
     margin: 0 auto;
-    color: var(--secondary-color);
+    color: var(--primary-color);
 }
 
 h2 {
@@ -103,7 +103,7 @@ h1 {
 footer {
     text-align: left;
 
-    color: var(--secondary-color);
+    color: var(--primary-color);
 
 }
 

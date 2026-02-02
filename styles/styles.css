@@ -7,16 +7,24 @@
 nav {
     background-color: darkblue;
     padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
 nav a {
+
     color: white;
     display: block;
-    padding: 20px;
+    padding: 0.5rem;
+    text-decoration: none;
+    font-size: 1.2rem;
+    font-weight: 700;
 }
 
 h1 {
     color: darkblue;
+    border-bottom: #ccc;
 }
 
 main {
@@ -61,10 +69,10 @@ p {
     padding: 0;
 }
 
+header,
 footer {
-    text-align: center;
-    margin-top: 15px;
-    border-top: 1px solid #000;
+    max-width: 840px;
+    margin: 0 auto;
 }
 
 /*Class Selectors*/
@@ -80,14 +88,6 @@ footer {
     background-color: var(--accent1-color);
     color: #ffffff;
     opacity: 0.9;
-}
-
-header {
-    background-color: var(--primary-color);
-}
-
-header a {
-    color: var(--accent2-color);
 }
 
 body {
