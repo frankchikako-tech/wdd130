@@ -24,6 +24,7 @@
 header {
     background-color: var(--accent2-color);
     color: var(--accent2-color);
+    display: flex;
 }
 
 * {
@@ -37,12 +38,21 @@ body {
     color: var(--primary-color);
 }
 
-header,
+header {
+    background-color: lightblue;
+    padding: 1px;
+    display: flexbox;
+    justify-content: space-around;
+    align-items: center;
+    text-align: right;
+}
+
 main,
 footer {
     width: 840px;
     margin: 0 auto;
     color: var(--primary-color);
+
 }
 
 h2 {
@@ -52,7 +62,35 @@ h2 {
     background-color: beige;
 }
 
-nav,
+header nav {
+    font-size: 1.2rem;
+    text-align: right;
+    padding: 10px;
+    display: block;
+    align-items: end;
+    /*background-color: greenyellow;
+    padding: 50px;
+    display: inline;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 840px;
+    text-decoration: none;
+    text-align: center;
+    text*/
+}
+
+nav a {
+
+    color: green;
+    display: flexbox;
+    padding: 1rem;
+    text-decoration: none;
+    font-size: 1.3rem;
+    font-weight: 700;
+    text-align: right;
+
+}
+
 p,
 section,
 article {
