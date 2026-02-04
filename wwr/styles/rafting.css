@@ -152,3 +152,30 @@ footer img {
 nav a:hover {
     color: var(--secondary-color);
 }
+
+.image-row {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    /* stacks nicely on smaller screens */
+}
+
+.image-row figure {
+    width: 200px;
+    /* adjust as needed */
+    margin: 0;
+    text-align: center;
+}
+
+.image-row img {
+    width: 100%;
+    height: auto;
+    border-radius: 6px;
+    /* optional */
+}
+
+.image-row figcaption {
+    font-size: 0.9rem;
+    margin-top: 6px;
+    color: #555;
+}
