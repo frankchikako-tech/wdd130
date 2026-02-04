@@ -151,12 +151,11 @@ nav a:hover {
     display: flex;
     gap: 20px;
     flex-wrap: wrap;
-    /* stacks nicely on smaller screens */
+
 }
 
 .image-row figure {
     width: 200px;
-    /* adjust as needed */
     margin: 0;
     text-align: center;
 }
@@ -165,11 +164,28 @@ nav a:hover {
     width: 100%;
     height: auto;
     border-radius: 6px;
-    /* optional */
 }
 
 .image-row figcaption {
     font-size: 0.9rem;
     margin-top: 6px;
     color: #555;
+}
+
+.history-container {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.history-container p {
+    flex: 1;
+    margin: 0;
+}
+
+.history-container img {
+    width: 200px;
+    height: auto;
+    border: 5px solid var(--primary-color);
 }
