@@ -1,0 +1,89 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-align: center;
+    font-size: 1.2rem;
+    color: #fff;
+    background-color: lightblue;
+    
+}
+header {
+    background-color: white;
+    color: rgb(95, 95, 211);
+    padding: 20px 0;
+}
+h1 {
+    margin: 0 auto;
+    width: 650px;
+}
+form {
+    background-color: white;
+    color: rgb(95, 95, 211);
+    width: 650px;
+    margin: 10px auto;
+    padding: 20px;
+    border-radius: 10px;
+    border: 1px solid rgb(0, 0, 0/0.1);
+    background-color: whitesmoke;
+    display: block;
+
+}
+fieldset {
+    border: 1px solid rgb(0, 0, 0/0.2);
+    padding: 10px;
+    margin-bottom: 20px;
+    display: grid;
+    gap: 5rem;
+}
+legend {
+    font-size: 1.2rem;
+    font-weight: 700;
+    color: navy;
+    padding: 0 10px;
+}
+label, input, button, select, textarea {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+
+    font-size: 1rem;
+}
+label {
+    text-align: right;
+    padding-right: 10px;
+}
+input, select, textarea {
+    padding: 5px;
+    font-size: 1.1rem;
+}
+input[type="checkbox"] {
+    width: 22px;
+    height: 22px;
+    vertical-align: bottom;
+}
+button {
+    background-color: navy;
+    color: white;
+    border: none;
+    padding: .75rem;
+    font-size: 1.2rem;
+    cursor: pointer;
+    border-radius: 5px;
+}
+button:hover {
+    background-color: darkgreen;
+}
+footer {
+   
+    color: #777;
+    border-top: 1px solid #ccc;
+    margin: 1rem auto 0;
+    text-align: center;
+    font-size: 0.8rem;
+    width: 650px;
+}
+
+
+

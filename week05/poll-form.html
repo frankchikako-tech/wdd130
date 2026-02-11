@@ -4,9 +4,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="styles/poll-form.css">
 </head>
 <body>
+    <header>
+        <h1>WDD | HTML Form - UserPoll</h1>
+    </header>
     <main>
+        
         <form>
             <label for="fullname">Full Name:</label>
             <input type="text" id="fullname" name="fullname" required><br><br>
@@ -25,7 +30,7 @@
             </select><br><br>
             <label for="pet">Do you have a pet?</label>
             <input type="checkbox" id="pet" name="pet"><br><br>
-            <label for="feedback">List the place you have lived:</label>
+            <label for="feedback">List the place you have lived:</label><br><br>
             <textarea id="feedback" name="feedback" rows="4" placeholder="Stillwater Florida, Amsterdam Netherlands, Timbuktu Mali"></textarea><br><br>
             <button type="submit">Submit Poll</button><br><br>
         </form>   
