@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Contact Us | The Rapids </title>
+    <meta name="description"
+      content="Contact The Rapids for reservations, general inquiries, or questions about our rafting adventures. Get in touch with our team today.">
+    <meta name="author" content="Ukeje Frank Chika">
+    <link rel="stylesheet" href="styles/rafting.css">
+</head>
+
+<body>
+    <header>
+        <img src="images/sitelogo.jpg" alt="Company Logo" width="125">
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="about.html">About Us</a>
+            <a href="trips.html">Trips</a>
+            <a href="contact.html">Contact Us</a>
+
+        </nav>
+
+    </header>
+    <main>
+
+        <h1>Contact Us</h1>
+
+        <!-- COMPANY CONTACT INFO -->
+        <section class="contact-info">
+            <h2>Company Information</h2>
+
+            <p><strong>Address:</strong> 123 River Rapids Road, Idaho Falls, ID</p>
+            <p><strong>Phone:</strong> +1 (208) 555-1234</p>
+            <p><strong>Email:</strong> info@whitewaterrafting.com</p>
+
+            <!-- Google Map -->
+            <iframe src="https://www.google.com/maps?q=Idaho+Falls+Idaho&output=embed" class="map">
+            </iframe>
+        </section>
+
+
+        <!-- EMPLOYEE PROFILES -->
+        <section class="employees">
+            <h2>Meet Our Team</h2>
+
+            <figure>
+                <img src="images/guide1.jpg" alt="River Guide">
+                <figcaption>Jake — Lead River Guide</figcaption>
+            </figure>
+
+            <figure>
+                <img src="images/guide2.jpg" alt="Safety Instructor">
+                <figcaption>Maria — Safety Instructor</figcaption>
+            </figure>
+
+            <figure>
+                <img src="images/guide3.jpg" alt="Reservations Manager">
+                <figcaption>Daniel — Reservations Manager</figcaption>
+            </figure>
+        </section>
+
+
+        <!-- CONTACT FORM -->
+        <section class="contact-form">
+            <h2>Send Us a Message</h2>
+
+            <form>
+
+                <!-- Name -->
+                <label for="name">Your Name</label>
+                <input type="text" id="name" name="name" required>
+
+                <!-- Email -->
+                <label for="email">Email Address</label>
+                <input type="email" id="email" name="email" required>
+
+                <!-- Purpose -->
+                <p class="form-label">Purpose of Message</p>
+
+                <label>
+                    <input type="radio" name="purpose" value="general" required>
+                    General Inquiry
+                </label>
+
+                <label>
+                    <input type="radio" name="purpose" value="reservation">
+                    Reservation Question
+                </label>
+
+                <label>
+                    <input type="radio" name="purpose" value="suggestion">
+                    Website Suggestion
+                </label>
+
+                <!-- Message -->
+                <label for="message">Message</label>
+                <textarea id="message" name="message" rows="5" required></textarea>
+
+                <!-- Newsletter -->
+                <label class="checkbox">
+                    <input type="checkbox" name="subscribe">
+                    Please subscribe me to the monthly newsletter
+                </label>
+
+                <!-- Submit -->
+                <button type="submit" class="submit-btn">
+                    Send Message
+                </button>
+
+            </form>
+        </section>
+
+    </main>
+
+    <footer>
+        <p>©2026 💦 The Rapids 💦 Ukeje Frank Chika</p>
+        <nav class="socialmedia">
+            <a href="https://facebook.com"><img src="images/faceboook.png" alt="facebook Icon"></a>
+            <a href="https//linkedin.com"><img src="images/linkedin.png" alt="linkedin Icon"></a>
+            <a href="https//instagram.com"><img src="images/instagram.jpeg"
+                  alt="Instagram Icon"></a>
+        </nav>
+
+    </footer>
+
+</body>
+
+</html>
