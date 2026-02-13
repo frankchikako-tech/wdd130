@@ -3,9 +3,59 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>HTML & CSS Quiz</title>
+    <link rel="stylesheet" href="styles/quiz.css">
 </head>
+
 <body>
-    
+
+    <main>
+        <h1>HTML & CSS Knowledge Quiz</h1>
+
+        <form>
+
+            <!-- Question 1 -->
+            <div class="form-group">
+                <label for="q1">
+                    1. What HTML tag is used to create a hyperlink?
+                </label>
+                <input type="text" id="q1" name="q1" required>
+            </div>
+
+            <!-- Question 2 -->
+            <div class="form-group">
+                <label for="q2">
+                    2. Explain the difference between class and id in CSS.
+                </label>
+                <textarea id="q2" name="q2" rows="4" required></textarea>
+            </div>
+
+            <!-- Question 3 -->
+            <div class="form-group">
+                <label for="q3">
+                    3. Which CSS property changes text color?
+                </label>
+                <select id="q3" name="q3" required>
+                    <option value="" selected disabled>Choose One ...</option>
+                    <option value="font-style">font-style</option>
+                    <option value="color">color</option>
+                    <option value="background">background</option>
+                </select>
+            </div>
+
+            <!-- Question 4 -->
+            <div class="form-group">
+                <label for="q4">
+                    4. How many heading levels exist in HTML?
+                </label>
+                <input type="number" id="q4" name="q4" min="1" max="10" required>
+            </div>
+
+            <!-- Submit Button -->
+            <button type="submit">Submit Quiz</button>
+
+        </form>
+    </main>
+
 </body>
 </html>
