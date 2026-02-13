@@ -1,128 +1,148 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en-US">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title> Contact Us | The Rapids </title>
-    <meta name="description"
-      content="Contact The Rapids for reservations, general inquiries, or questions about our rafting adventures. Get in touch with our team today.">
+    <title>Contact Us | The Rapids</title>
+
+    <meta name="description" content="Contact The Rapids for reservations and general inquiries.">
     <meta name="author" content="Ukeje Frank Chika">
+
     <link rel="stylesheet" href="styles/rafting.css">
 </head>
 
 <body>
+
+    <!-- HEADER -->
     <header>
-        <img src="images/sitelogo.jpg" alt="Company Logo" width="125">
+        <img src="images/sitelogo.jpg" alt="The Rapids company logo">
+
         <nav>
             <a href="index.html">Home</a>
             <a href="about.html">About Us</a>
             <a href="trips.html">Trips</a>
             <a href="contact.html">Contact Us</a>
-
         </nav>
-
     </header>
+
+    <!-- MAIN CONTENT -->
     <main>
 
-        <h1>Contact Us</h1>
-
-        <!-- COMPANY CONTACT INFO -->
-        <section class="contact-info">
-            <h2>Company Information</h2>
-
-            <p><strong>Address:</strong> 123 River Rapids Road, Idaho Falls, ID</p>
-            <p><strong>Phone:</strong> +1 (208) 555-1234</p>
-            <p><strong>Email:</strong> info@whitewaterrafting.com</p>
-
-            <!-- Google Map -->
-            <iframe src="https://www.google.com/maps?q=Idaho+Falls+Idaho&output=embed" class="map">
-            </iframe>
+        <!-- ✅ COMPANY HEADING (DIRECTLY BELOW NAVIGATION) -->
+        <section class="company-heading">
+            <h1>The Rapids</h1>
+            <p>Dabban Avenue, Bwari, Abuja, Nigeria</p>
+            <p>+234 8142959680</p>
+            <p>frankchikako@gmail.com</p>
         </section>
 
 
-        <!-- EMPLOYEE PROFILES -->
-        <section class="employees">
-            <h2>Meet Our Team</h2>
+        <!-- ✅ MAP + FORM GRID -->
+        <section class="contact-grid">
 
-            <figure>
-                <img src="images/guide1.jpg" alt="River Guide">
-                <figcaption>Jake — Lead River Guide</figcaption>
-            </figure>
+            <!-- MAP -->
+            <div class="map-container">
+                <iframe src="https://www.google.com/maps?q=Abuja,Nigeria&output=embed" class="map"
+                  loading="lazy">
+                </iframe>
+            </div>
 
-            <figure>
-                <img src="images/guide2.jpg" alt="Safety Instructor">
-                <figcaption>Maria — Safety Instructor</figcaption>
-            </figure>
+            <!-- CONTACT FORM -->
+            <div class="contact-form">
 
-            <figure>
-                <img src="images/guide3.jpg" alt="Reservations Manager">
-                <figcaption>Daniel — Reservations Manager</figcaption>
-            </figure>
+                <form>
+
+                    <div class="form-row">
+                        <label for="name">Name</label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+
+                    <div class="form-row">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+
+                    <!-- RADIO BUTTONS -->
+                    <div class="radio-section">
+                        <p>Message Purpose</p>
+
+                        <div class="radio-item">
+                            <input type="radio" id="general" name="purpose" value="general"
+                              required>
+                            <label for="general">General Inquiry</label>
+                        </div>
+
+                        <div class="radio-item">
+                            <input type="radio" id="reservation" name="purpose" value="reservation">
+                            <label for="reservation">Reservation Question</label>
+                        </div>
+
+                        <div class="radio-item">
+                            <input type="radio" id="suggestion" name="purpose" value="suggestion">
+                            <label for="suggestion">Website Suggestion</label>
+                        </div>
+                    </div>
+
+                    <div class="form-row">
+                        <label for="message">Message</label>
+                        <textarea id="message" name="message" rows="4" required></textarea>
+                    </div>
+
+                    <!-- CHECKBOX -->
+                    <div class="checkbox-item">
+                        <input type="checkbox" id="subscribe" name="subscribe">
+                        <label for="subscribe">
+                            Please subscribe me to the monthly newsletter
+                        </label>
+                    </div>
+
+                    <!-- SUBMIT -->
+                    <button type="submit" class="submit-btn">
+                        Send Message to The Rapids Team
+                    </button>
+
+                </form>
+            </div>
         </section>
 
 
-        <!-- CONTACT FORM -->
-        <section class="contact-form">
-            <h2>Send Us a Message</h2>
+        <!-- ✅ EMPLOYEE SECTION -->
+        <section class="team-banner">
+            <h2>We Are Here to Serve You</h2>
 
-            <form>
+            <div class="employee-grid">
 
-                <!-- Name -->
-                <label for="name">Your Name</label>
-                <input type="text" id="name" name="name" required>
+                <figure>
+                    <img src="images/guide1.jpg" alt="Jake Lead River Guide">
+                    <figcaption>Jake — Lead River Guide</figcaption>
+                </figure>
 
-                <!-- Email -->
-                <label for="email">Email Address</label>
-                <input type="email" id="email" name="email" required>
+                <figure>
+                    <img src="images/guide2.jpg" alt="Maria Safety Instructor">
+                    <figcaption>Maria — Safety Instructor</figcaption>
+                </figure>
 
-                <!-- Purpose -->
-                <p class="form-label">Purpose of Message</p>
+                <figure>
+                    <img src="images/guide3.jpg" alt="Daniel Reservations Manager">
+                    <figcaption>Daniel — Reservations Manager</figcaption>
+                </figure>
 
-                <label>
-                    <input type="radio" name="purpose" value="general" required>
-                    General Inquiry
-                </label>
-
-                <label>
-                    <input type="radio" name="purpose" value="reservation">
-                    Reservation Question
-                </label>
-
-                <label>
-                    <input type="radio" name="purpose" value="suggestion">
-                    Website Suggestion
-                </label>
-
-                <!-- Message -->
-                <label for="message">Message</label>
-                <textarea id="message" name="message" rows="5" required></textarea>
-
-                <!-- Newsletter -->
-                <label class="checkbox">
-                    <input type="checkbox" name="subscribe">
-                    Please subscribe me to the monthly newsletter
-                </label>
-
-                <!-- Submit -->
-                <button type="submit" class="submit-btn">
-                    Send Message
-                </button>
-
-            </form>
+            </div>
         </section>
 
     </main>
 
+
+    <!-- FOOTER -->
     <footer>
         <p>©2026 💦 The Rapids 💦 Ukeje Frank Chika</p>
-        <nav class="socialmedia">
-            <a href="https://facebook.com"><img src="images/faceboook.png" alt="facebook Icon"></a>
-            <a href="https//linkedin.com"><img src="images/linkedin.png" alt="linkedin Icon"></a>
-            <a href="https//instagram.com"><img src="images/instagram.jpeg"
-                  alt="Instagram Icon"></a>
-        </nav>
 
+        <div class="social-icons">
+            <a href="#"><img src="images/facebook.png" alt="Follow us on Facebook"></a>
+            <a href="#"><img src="images/linkedin.png" alt="Follow us on LinkedIn"></a>
+            <a href="#"><img src="images/instagram.jpeg" alt="Follow us on Instagram"></a>
+        </div>
     </footer>
 
 </body>
