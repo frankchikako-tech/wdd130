@@ -74,7 +74,7 @@ header nav {
     text*/
 }
 
-nav a {
+/*nav a {
 
     color: green;
     padding: 1rem;
@@ -83,7 +83,7 @@ nav a {
     font-weight: 700;
     text-align: right;
 
-}
+}*/
 
 p,
 section,
@@ -106,7 +106,7 @@ article {
     height: auto;
 }
 
-h1 {
+/*h1 {
     position: absolute;
     top: 20px;
     width: 100%;
@@ -115,7 +115,7 @@ h1 {
     opacity: 0.7;
     background-color: var(--accent1-color);
     color: var(--accent2-color);
-}
+}*/
 
 .hero article img {
     float: right;
@@ -192,7 +192,7 @@ nav a:hover {
 
 /* MAIN LAYOUT */
 main {
-    max-width: 1000px;
+    max-width: 800px;
     margin: 0 auto;
     padding: 20px;
 }
@@ -200,7 +200,8 @@ main {
 /* COMPANY HEADING */
 .company-heading {
     text-align: center;
-    margin-bottom: 30px;
+    margin-bottom: 10px;
+
 }
 
 /* MAP + FORM GRID */
@@ -308,4 +309,12 @@ footer {
     .form-row textarea {
         width: 100%;
     }
+}
+
+header {
+    background-color: #829ca7;
+}
+
+nav {
+    border: black;
 }
