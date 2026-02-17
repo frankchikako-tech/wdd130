@@ -190,21 +190,18 @@ nav a:hover {
     border: 5px solid var(--primary-color);
 }
 
-/* MAIN LAYOUT */
 main {
     max-width: 800px;
     margin: 0 auto;
     padding: 20px;
 }
 
-/* COMPANY HEADING */
 .company-heading {
     text-align: center;
     margin-bottom: 10px;
 
 }
 
-/* MAP + FORM GRID */
 .contact-grid {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -219,7 +216,6 @@ main {
     border-radius: 6px;
 }
 
-/* FORM */
 .form-row {
     display: flex;
     justify-content: space-between;
@@ -248,7 +244,6 @@ main {
     margin-bottom: 6px;
 }
 
-/* BUTTON */
 .submit-btn {
     width: 100%;
     padding: 12px;
@@ -262,7 +257,6 @@ main {
     background-color: #cfcfcf;
 }
 
-/* EMPLOYEE SECTION */
 .team-banner {
     background-color: #f4f4f4;
     padding: 20px;
@@ -284,7 +278,6 @@ main {
     border-radius: 8px;
 }
 
-/* FOOTER */
 footer {
     display: flex;
     justify-content: space-between;
@@ -292,9 +285,9 @@ footer {
     background-color: #d8c8ff;
     padding: 20px;
     border-top: 2px solid #333;
+
 }
 
-/* MOBILE RESPONSIVE */
 @media (max-width: 768px) {
     .contact-grid {
         grid-template-columns: 1fr;
@@ -317,4 +310,8 @@ header {
 
 nav {
     border: black;
+}
+
+footer p {
+    text-align: center;
 }
