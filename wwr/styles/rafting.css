@@ -90,7 +90,11 @@ section,
 article {
     margin-left: 20px;
     padding: 10px;
+    max-width: 900px;
+}
 
+article {
+    max-height: 100px;
 }
 
 .socialmedia a {
@@ -107,7 +111,7 @@ article {
     height: auto;
 }
 
-/*h1 {
+h1 {
     position: absolute;
     top: 20px;
     width: 100%;
@@ -116,12 +120,13 @@ article {
     opacity: 0.7;
     background-color: var(--accent1-color);
     color: var(--accent2-color);
-}*/
+}
 
 .hero article img {
     float: right;
     width: 200px;
-    padding: 5%;
+    padding: 3%;
+    max-height: 110px;
 }
 
 .hero article {
