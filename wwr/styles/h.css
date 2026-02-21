@@ -30,6 +30,16 @@ body {
     line-height: 1.5;
 }
 
+a {
+    text-decoration: none;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
 /* =====================
    Header & Navigation
 ===================== */
@@ -38,15 +48,18 @@ header {
     justify-content: space-between;
     align-items: center;
     background-color: var(--accent1-color);
-    color: var(--accent2-color);
-    padding: 1rem;
+    padding: 1rem 2rem;
+}
+
+header img {
+    width: 120px;
 }
 
 nav a {
     color: var(--accent2-color);
-    margin-left: 15px;
-    text-decoration: none;
+    margin-left: 20px;
     font-weight: 600;
+    transition: color 0.3s;
 }
 
 nav a:hover {
@@ -73,40 +86,24 @@ nav a:hover {
     transform: translate(-50%, -50%);
     color: var(--accent2-color);
     background-color: rgba(0, 0, 0, 0.5);
-    padding: 1rem;
+    padding: 1rem 2rem;
     text-align: center;
 }
 
-.hero article {
-    position: absolute;
-    top: 300px;
-    width: 95%;
-    background-color: var(--accent1-color);
-    color: var(--accent2-color);
-    padding: 10px;
-
-}
-
-.hero article img {
-    float: right;
-    width: 200px;
-    max-height: 110px;
-    margin-left: 10px;
-}
-
 /* =====================
-   Headings & Text
+   Sections & Typography
 ===================== */
 h1,
-h2 {
+h2,
+h3 {
     font-family: var(--heading-font);
 }
 
 h2 {
-    color: var(--primary-color);
     text-align: center;
     background-color: beige;
-    padding: 8px;
+    padding: 10px;
+    margin-bottom: 1rem;
 }
 
 p,
@@ -117,11 +114,42 @@ article {
     max-width: 900px;
 }
 
+.history-container {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.history-container img {
+    width: 200px;
+    border: 5px solid var(--primary-color);
+}
+
+.image-row {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.image-row figure {
+    width: 200px;
+    text-align: center;
+}
+
+.image-row figcaption {
+    font-size: 0.9rem;
+    margin-top: 6px;
+    color: #555;
+}
+
 /* =====================
-   Grids & Layouts
+   Grids
 ===================== */
 .home-grid,
-.trip-grid {
+.trip-grid,
+.employee-grid {
     display: grid;
     gap: 20px;
     padding: 2rem;
@@ -135,27 +163,9 @@ article {
     grid-template-columns: repeat(3, 1fr);
 }
 
-.image-row {
-    display: flex;
-    gap: 20px;
-    flex-wrap: wrap;
-}
-
-.image-row figure {
-    width: 200px;
-    text-align: center;
-}
-
-.image-row img {
-    width: 100%;
-    height: auto;
-    border-radius: 6px;
-}
-
-.image-row figcaption {
-    font-size: 0.9rem;
-    margin-top: 6px;
-    color: #555;
+.employee-grid {
+    grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+    justify-items: center;
 }
 
 /* =====================
@@ -177,17 +187,16 @@ article {
 
 .form-row {
     display: flex;
-    justify-content: space-between;
-    align-items: center;
+    flex-direction: column;
     margin-bottom: 12px;
 }
 
 .form-row input,
 .form-row textarea {
-    width: 70%;
     padding: 8px;
     border: 1px solid #777;
     border-radius: 4px;
+    margin-top: 4px;
 }
 
 .radio-section p {
@@ -206,38 +215,16 @@ article {
 .submit-btn {
     width: 100%;
     padding: 12px;
-    background-color: #e0e0e0;
-    border: 1px solid #777;
+    background-color: var(--secondary-color);
+    border: none;
+    color: var(--accent2-color);
     font-weight: bold;
     cursor: pointer;
+    transition: background-color 0.3s;
 }
 
 .submit-btn:hover {
-    background-color: #cfcfcf;
-}
-
-/* =====================
-   Teams & Employees
-===================== */
-.team-banner {
-    background-color: #f4f4f4;
-    padding: 20px;
-    border: 1px solid #333;
-    text-align: center;
-}
-
-.employee-grid {
-    display: flex;
-    justify-content: space-around;
-    flex-wrap: wrap;
-    margin-top: 20px;
-}
-
-.employee-grid img {
-    width: 120px;
-    height: 120px;
-    object-fit: cover;
-    border-radius: 8px;
+    background-color: var(--primary-color);
 }
 
 /* =====================
@@ -250,11 +237,15 @@ footer {
     background-color: var(--accent1-color);
     color: var(--accent2-color);
     padding: 1rem 2rem;
-    border-top: 2px solid var(--primary-color);
+    flex-wrap: wrap;
 }
 
-footer p {
-    text-align: center;
+footer img {
+    width: 30px;
+}
+
+footer nav a {
+    margin-left: 10px;
 }
 
 /* =====================
@@ -264,6 +255,7 @@ table {
     width: 80%;
     margin: auto;
     border-collapse: collapse;
+    align-items: center;
 }
 
 th,
@@ -274,6 +266,26 @@ td {
 }
 
 /* =====================
+   Buttons & CTA
+===================== */
+.cta {
+    text-align: center;
+    padding: 2rem;
+}
+
+.button {
+    background-color: var(--primary-color);
+    color: var(--accent2-color);
+    padding: 10px 20px;
+    border-radius: 4px;
+    font-weight: bold;
+}
+
+.button:hover {
+    background-color: var(--secondary-color);
+}
+
+/* =====================
    Responsive
 ===================== */
 @media (max-width: 768px) {
@@ -281,21 +293,13 @@ td {
         grid-template-columns: 1fr;
     }
 
-    .form-row {
-        flex-direction: column;
-        align-items: flex-start;
-    }
-
-    .form-row input,
-    .form-row textarea {
-        width: 100%;
-    }
-
-    .home-grid {
-        grid-template-columns: 1fr;
-    }
-
+    .home-grid,
     .trip-grid {
         grid-template-columns: 1fr;
+    }
+
+    .history-container {
+        flex-direction: column;
+        align-items: center;
     }
 }
